@@ -7,7 +7,7 @@
 }
 
 #seconds {
-    color: #fac3c3;
+    color: #fdd9d9;
 }
 
 /* Container and Background */
@@ -196,9 +196,10 @@
     }
 }
 
-/* @media (max-width: 600px) {
+/* For tablets (width 600px to 768px) */
+@media (max-width: 768px) {
     .names {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     .title {
@@ -206,26 +207,7 @@
     }
 
     .message {
-        font-size: 1.2rem;
-    }
-
-    .countdown span:first-child {
-        font-size: 1.5rem;
-    }
-} */
-
-/* For tablets in portrait mode (width 600px to 768px) */
-@media (max-width: 768px) {
-    .names {
-        font-size: 4rem;
-    }
-
-    .title {
-        font-size: 2.1rem;
-    }
-
-    .message {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .details {
@@ -241,14 +223,14 @@
     }
 }
 
-/* For small tablets and larger phones (width 480px to 600px) */
+/* For small tablets and large phones (width 480px to 600px) */
 @media (max-width: 600px) {
     .names {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .message {
@@ -265,17 +247,23 @@
 
     .countdown {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 95%;
+        height: 350px;
     }
 }
 
-/* For smaller smartphones (width 320px to 480px) */
+/* For small smartphones (width 320px to 480px) */
 @media (max-width: 480px) {
     .names {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .message {
@@ -290,32 +278,31 @@
         font-size: 1.3rem;
     }
 
-    .countdown {
-        gap: 10px;
+    .map-container {
+        height: 300px;
     }
 
-    .map-container {
-        width: 95%;
-        height: 300px;
+    .overlay {
+        padding: 15px;
     }
 }
 
 /* For very small devices (less than 320px width) */
 @media (max-width: 320px) {
     .names {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .message {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .details {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .countdown span:first-child {
