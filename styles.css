@@ -6,6 +6,13 @@
     font-family: 'Arial', sans-serif;
 }
 
+.and {
+    color: #fcf9f9;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
+
 #seconds {
     color: #f9b4b4;
 }
@@ -42,9 +49,12 @@
 .names {
     font-size: 6rem;
     color: #fcf9f9;
-    margin-bottom: 10px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bride {
+    margin-bottom: 10px;
 }
 
 /* Title and Message */
@@ -289,6 +299,10 @@
 
 /* For very small devices (less than 320px width) */
 @media (max-width: 320px) {
+    .and {
+      font-size: 1rem;
+    }
+
     .names {
         font-size: 2rem;
     }
